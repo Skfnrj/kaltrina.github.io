@@ -7,15 +7,21 @@
 
 <style>
 body{
+
+	html, body {
+            height: 100%;
+            margin: 0;
+
         font-family: 'Pixelify Sans', monospace;
 	background-image: url('option2.jpeg');
 	background-size: cover;
-	background-position: center;
+	background-position: center center;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-color: rgba(0,0,0,0.5);
-	background-blend-mode: darken;
         text-align: center;
-        margin-top: 50px;
+	min-height: 100vh;
+	padding-top: 50px;
 }
 
 h1{
@@ -48,7 +54,8 @@ p{
                 3px 3px 0 white,
                 -3px -3px 0 white,
                 3px -3px 0 white,
-                -3px 3px 0 white;
+                -3px 3px 0 white,
+		0 0 10px #EE82EE;
 }
 </style>
 </head>
