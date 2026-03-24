@@ -34,8 +34,8 @@
 
 	        .flip-card {
             background-color: transparent;
-            width: 300px;
-            height: 200px;
+            width: 320px;
+            height: 260px;
             margin: 50px auto;
             perspective: 1000px;
             cursor: pointer;
@@ -59,7 +59,7 @@
             width: 100%;
             height: 100%;
             border: 3px solid #40E0D0;
-            border-radius: 10px;
+            border-radius: 12px;
             box-shadow: 0 0 15px #40E0D0;
             backface-visibility: hidden;
             display: flex;
@@ -67,7 +67,8 @@
             justify-content: center;
             align-items: center;
             padding: 15px;
-            box-sizing: border-box;
+            box-sizing: border-box;		
+	    overflow: hidden;
         }
 
         .flip-card-front {
@@ -79,6 +80,20 @@
             background-color: #220033;
             color: #EE82EE;
             transform: rotateY(180deg);
+        }
+
+ 	.flip-card-front h2,
+        .flip-card-back h2 {
+            margin: 0 0 15px 0;
+            font-size: 28px;
+        }
+
+        .flip-card-front p,
+        .flip-card-back p {
+            margin: 8px 0;
+            font-size: 18px;
+            line-height: 1.4;
+            text-shadow: none;
         }
     </style>
 </head>
@@ -97,11 +112,10 @@
 
             <div class="flip-card-back">
                 <h2>Kaltrina</h2>
-                <p>Computer Science student.</p>
-                <p>Learning Git & GitHub.</p>
-                <p>Hobbies: reading, playing the piano, movies.</p>
+                <p>Computer Science student</p>
+                <p>Learning Git & GitHub</p>
+                <p>Hobbies: reading, piano, movies</p>
             </div>
-
         </div>
     </div>
 </body>
