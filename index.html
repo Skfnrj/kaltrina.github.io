@@ -95,12 +95,44 @@
             line-height: 1.4;
             text-shadow: none;
         }
+
+	.theme-btn {
+    		margin-top: 20px;
+   		padding: 10px 20px;
+    		font-family: 'Pixelify Sans', monospace;
+    		font-size: 16px;
+    		border: 2px solid #40E0D0;
+    		background-color: black;
+    		color: #40E0D0;
+    		cursor: pointer;
+    		box-shadow: 0 0 10px #40E0D0;
+}
+
+	.theme-btn:hover {
+    		background-color: #40E0D0;
+    		color: black;
+	}
+
+	.neon {
+    		background: linear-gradient(to bottom, #000000, #001a1a);
+	}
+
+	.neon h1 {
+    		color: #00ffff;
+    		text-shadow: 0 0 15px #00ffff;
+	}
+
+	.neon p {
+    		color: #ff00ff;
+	}	
     </style>
 </head>
 <body>
     <h1>Hello, GitHub Pages!</h1>
     <p>This is my first website.</p>
     <p>This is my second update for the Git homework assignment.</p>
+
+<button onclick="toggleTheme()" class="theme-btn">Toggle Theme</button>
 
  <div class="flip-card" onclick="this.classList.toggle('flipped')">
         <div class="flip-card-inner">
@@ -118,6 +150,11 @@
             </div>
         </div>
     </div>
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("neon");
+}
+</script>
 </body>
 </html>
 
